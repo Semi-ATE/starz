@@ -18,8 +18,9 @@ jobs:
           pip install -r requirements/test.txt
       - name: Show environment
         run: pip list
-#      - name: Run tests
-#        run: |
+      - name: Run tests
+        run: |
+          echo tests disabled !!!!!
 #          pytest tests/ --cov=starz
       - name: Check package
         run: |
