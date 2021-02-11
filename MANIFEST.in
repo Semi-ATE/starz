@@ -1,6 +1,7 @@
 include *.txt
 include *.md
 include .bumpversion.cfg
+include LICENSE
 recursive-include requirements *.txt
 recursive-exclude tests *.py
 recursive-include starz *.py
