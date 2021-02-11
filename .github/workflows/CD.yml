@@ -1,9 +1,8 @@
 name: CD
 
 on:
-  push:
-    tags:
-    - 'v**'
+  release:
+    types: [published]
 
 jobs:
   upload-pypi:
@@ -28,4 +27,3 @@ jobs:
         TWINE_PASSWORD: ${{ secrets.PYPI_TOKEN }}
       run: |
         python -m twine upload dist/*
-        
