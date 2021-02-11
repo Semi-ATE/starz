@@ -1,0 +1,7 @@
+include *.txt
+include *.md
+include .bumpversion.cfg
+recursive-include requirements *.txt
+recursive-exclude tests *.py
+recursive-include starz *.py
+recursive-include scripts *.py
