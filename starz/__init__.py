@@ -1,4 +1,4 @@
- Copyright (c) Semi-ATE
+# Copyright (c) Semi-ATE
 # Distributed under the terms of the MIT License
 import os
 
