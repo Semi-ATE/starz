@@ -1,8 +1,3 @@
-<!--- Make sure to read the Contributing Guidelines:                   --->
-<!--- https://github.com/spyder-ide/spyder/blob/master/CONTRIBUTING.md --->
-<!--- and follow PEP 8, PEP 257 and Spyder's code style:               --->
-<!--- https://github.com/spyder-ide/spyder/wiki/Dev:-Coding-Style      --->
-
 ## Description of Changes
 
 
