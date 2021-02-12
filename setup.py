@@ -106,8 +106,10 @@ setup(
     },
 #    scripts=[],
     classifiers=[  # https://pypi.org/classifiers/
-        'License :: OSI Approved :: GNU General Public License v2 (GPLv2)',
+        'License :: OSI Approved :: MIT License',
         'Operating System :: POSIX :: Linux',
+        'Operating System :: MacOS :: MacOS X',
+        'Operating System :: Microsoft :: Windows :: Windows 10',
         'Natural Language :: English',
         'Programming Language :: Python',
         'Programming Language :: Python :: 3 :: Only',
