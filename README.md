@@ -9,6 +9,7 @@ This poses a problem when one needs to install huge tarballs (eg: [PetaLinux](ht
 The Unix [split](https://www.man7.org/linux/man-pages/man1/split.1.html) command will **not** do as each resulting 'split' is not individual un-tar-able, and after a [cat](https://www.man7.org/linux/man-pages/man1/cat.1.html) of the individual parts, we violate the 5GB layer constraint again.
 
 ![CI](https://github.com/Semi-ATE/starz/workflows/CI/badge.svg)
+[![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/tterb/atomic-design-ui/blob/master/LICENSEs)
 
 # Installation
 
