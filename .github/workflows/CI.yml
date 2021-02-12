@@ -21,7 +21,7 @@ jobs:
       - name: Run tests
         run: |
           echo tests disabled !!!!!
-#          pytest tests/ --cov=starz
+          pytest tests/ --cov=starz
       - name: Check package
         run: |
           python setup.py sdist
