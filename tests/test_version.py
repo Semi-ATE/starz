@@ -2,4 +2,4 @@
 # Distributed under the terms of the MIT License
 
 def test_version():
-    assert True
+    assert False
