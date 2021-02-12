@@ -1,7 +1,7 @@
 # starz
 **S**ized **T**ape **AR**chive**Z**
 
-This small command line tool will create sized tar files from either a (gzipped) tar or a directory.
+This small command line tool creates sized (gzipped) tar files from either a (gzipped) tar or a directory.
 
 The 'raison d'être' of this tool is because [GitHub Packages](https://github.com/features/packages) limits the layer size of a docker container to 5GB.
 This poses a problem when one needs to install huge tarballs (eg: [PetaLinux](https://www.xilinx.com/support/download/index.html/content/xilinx/en/downloadNav/embedded-design-tools.html), [vivado](https://www.xilinx.com/support/download.html), ...)
