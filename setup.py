@@ -104,6 +104,11 @@ setup(
         'install': install,
         'clean': clean,
     },
+    entry_points={
+        'console_scripts': [
+            'starz = starz:',
+            ],
+    },
 #    scripts=[],
     classifiers=[  # https://pypi.org/classifiers/
         'License :: OSI Approved :: MIT License',
