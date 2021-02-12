@@ -106,7 +106,7 @@ setup(
     },
     entry_points={
         'console_scripts': [
-            'starz = starz:',
+            'starz=starz.__main__:main',
             ],
     },
 #    scripts=[],
