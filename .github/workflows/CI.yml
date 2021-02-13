@@ -29,4 +29,3 @@ jobs:
       - name: Check manifest
 #        if: ${{ contains(github.ref, 'main') }}
         run: check-manifest
-
