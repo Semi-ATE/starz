@@ -22,12 +22,11 @@ jobs:
         run: |
           echo tests disabled !!!!!
           pytest tests/ --cov=starz
+      - name: Create package
+        run: python setup.py sdist
       - name: Check package
-        run: |
-          python setup.py sdist
-          twine check dist/*
-      - name: Check manifest 
+        run: twine check dist/*
+      - name: Check manifest (only on push to main)
         if: ${{ contains(github.ref, 'main') }}
-        run: |
-          check-manifest
+        run: check-manifest
 
