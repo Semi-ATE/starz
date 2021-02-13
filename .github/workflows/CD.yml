@@ -35,6 +35,7 @@ jobs:
       run:  twine check dist/*
     - name: Check manifest
       run: check-manifest
+    - run: ls -la dist/*
 #    - name: Upload to PyPI
 #      env:
 #        TWINE_USERNAME: __token__
