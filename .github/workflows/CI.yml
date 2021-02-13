@@ -16,17 +16,13 @@ jobs:
         run: |
           pip install -r requirements/run.txt
           pip install -r requirements/test.txt
-      - name: Show environment
-        run: pip list
+#      - name: Show environment
+#        run: pip list
       - name: Run tests
-        run: |
-          echo tests disabled !!!!!
-          pytest tests/ --cov=starz
+        run: pytest tests/ --cov=starz
+      - name: Create package
+        run: python setup.py sdist 
       - name: Check package
-        run: |
-          python setup.py sdist
-          twine check dist/*
+        run: twine check dist/*
       - name: Check manifest 
-        if: contains(github.ref, "main")
-        run: |
-          check-manifest
+        run: check-manifest
