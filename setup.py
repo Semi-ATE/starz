@@ -96,7 +96,16 @@ if PyMinor < 7:
     sys.exit(1)
 
 
+with open(os.path.join(here, "requirements", "run.txt"), "r") as requirements:
+    run_requirements = requirements.readlines()
+install_requirements = []
+for requirement in run_requirements:
+    if requirement.replace("\n", "") != "":
+        install_requirements.append(requirement.replace("\n", ""))
+
 # https://setuptools.readthedocs.io/en/latest/
+# PEP-314 (Metadata for Python Software Packages) : https://www.python.org/dev/peps/pep-0314/
+# https://pypi.org/classifiers/
 setup(
     name=Project_name,
     version=Project_version,
@@ -104,9 +113,8 @@ setup(
     long_description=Project_description,
     long_description_content_type='text/markdown',
     author='Tom Hören',
-    author_email='horen.tom@gmail.com',
-    maintainer='Semi-ATE',  # supperseeds author !
-    maintainer_email='info@Semi-ATE.com',  # the Semi-ATE official e-mail address
+    maintainer='Semi-ATE',
+    maintainer_email='info@Semi-ATE.com',
     url='https://github.com/Semi-ATE/starz',
     packages=find_packages(),
     cmdclass={
@@ -120,7 +128,7 @@ setup(
             ],
     },
 #    scripts=[],
-    classifiers=[  # https://pypi.org/classifiers/
+    classifiers=[  
         'License :: OSI Approved :: MIT License',
         'Operating System :: POSIX :: Linux',
         'Operating System :: MacOS :: MacOS X',
@@ -134,26 +142,19 @@ setup(
         'Development Status :: 4 - Beta',
         'Intended Audience :: Science/Research',
         'Intended Audience :: Developers',
-        'Topic :: Utilities',
-        'Topic :: System :: Installation/Setup',
-        'Topic :: Software Development :: Build Tools',
-        'Topic :: System :: Archiving',
-        'Topic :: System :: Archiving :: Compression',
-        'Topic :: System :: Archiving :: Packaging',
-        'Topic :: Utilities',
+        'Topic :: Software Development :: Libraries',
+        'Topic :: Software Development :: Libraries :: Python Modules',
+        'Topic :: Scientific/Engineering',
     ],
     license="MIT",
-    keywords=[  # PEP-314 : https://www.python.org/dev/peps/pep-0314/
+    keywords=[  
         'tar',
         'archives',
         'docker',
         'vivado',
         'petalinux',
     ],
-    platforms=['Windows','Linux','MacOS'],
-#    zip_safe=True,  # TODO: maybe set to False, so that only wheel packages are made ?
-#    install_requires=[],  # TODO: How do I get requirements/run.txt in here ?!?
-#    setup_requires=[],  # usage discouraged in favor of PEP-518 : https://www.python.org/dev/peps/pep-0518/
-    python_requires='>=3.7', # PEP 440 : https://www.python.org/dev/peps/pep-0440/ 
-
+    platforms=["Windows", "Linux", "MacOS"],
+    install_requires=install_requirements,
+    python_requires='>=3.7',
 )
