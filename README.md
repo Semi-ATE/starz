@@ -15,10 +15,10 @@ The Unix [split](https://www.man7.org/linux/man-pages/man1/split.1.html) command
 
 # Installation
 
-## conda (preferred)
+## conda
 
 ```sh
-me@mybox$ conda install starz
+(conda-forge) me@mybox$ conda install starz
 ```
 
 ## pip
@@ -85,4 +85,3 @@ brol.01.tar.gz:  99%|███████████████████�
 brol.02.tar.gz:  43%|███████████             | 6751263/15728640 [00:00<00:00, 151304825.55 Bytes/s]
 me@mybox$ 
 ```
-
