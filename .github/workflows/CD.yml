@@ -19,7 +19,12 @@ jobs:
           pip install -r requirements/run.txt
           pip install -r requirements/test.txt
     - name: tag to version
-      run: echo "RELEASE_VERSION=${GITHUB_REF#refs/*/}"
+      run: |
+        echo "# Copyright (c) Semi-ATE" > starz/__init__.py
+        echo "# Distributed under the terms of the MIT License" >> starz/__init__.py
+        echo "__version__='${GITHUB_REF#refs/*/}'" >> starz/__init__.py
+    - name: verify version
+      run: cat starz/__init__.py
 #    - name: Create package
 #      run: python setup.py sdist
 #    - name: Check package
