@@ -15,7 +15,7 @@ import gzip
 import filetype
 from tqdm import tqdm
 
-from __init__ import __version__
+from . import __version__
 
 def is_tar_file(FileName):
     """This function returns true if the supplied FileName holds the magic number for a .tar file."""
