@@ -18,15 +18,13 @@ jobs:
       run: |
           pip install -r requirements/run.txt
           pip install -r requirements/test.txt
-    - name: verify pre version
-      run: cat starz/__init__.py
     - name: tag to version
       run: |
         echo "# Copyright (c) Semi-ATE" > starz/__init__.py
         echo "# Distributed under the terms of the MIT License" >> starz/__init__.py
         echo "__version__='${GITHUB_REF#refs/*/}'" >> starz/__init__.py
-    - name: verify post version
-      run: cat starz/__init__.py
+    - name: Run tests
+      run: pytest tests/ --cov=starz
 #    - name: Create package
 #      run: python setup.py sdist
 #    - name: Check package
