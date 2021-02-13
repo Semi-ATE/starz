@@ -37,8 +37,8 @@ Collecting filetype
   Downloading filetype-1.0.7-py2.py3-none-any.whl (15 kB)
 Building wheels for collected packages: starz
   Building wheel for starz (setup.py) ... done
-  Created wheel for starz: filename=starz-0.2.1-py3-none-any.whl size=6494 sha256=...
-  Stored in directory: /home/me/.cache/pip/wheels/2f/b2/9a/b3d2015e9fa8ac6acc46073e7e7b30dc9c52e87e523f83c02a
+  Created wheel for starz: ...
+  Stored in directory: ...
 Successfully built starz
 Installing collected packages: tqdm, filetype, starz
 Successfully installed filetype-1.0.7 starz-0.2.1 tqdm-4.56.2
