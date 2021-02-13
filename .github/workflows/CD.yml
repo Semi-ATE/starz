@@ -29,13 +29,12 @@ jobs:
       uses: codecov/codecov-action@v1
       with:
         token: ${{ secrets.CODECOV_TOKEN }}
-
-#    - name: Create package
-#      run: python setup.py sdist
-#    - name: Check package
-#      run:  twine check dist/*
-#    - name: Check manifest
-#      run: check-manifest
+    - name: Create package
+      run: python setup.py sdist
+    - name: Check package
+      run:  twine check dist/*
+    - name: Check manifest
+      run: check-manifest
 #    - name: Upload to PyPI
 #      env:
 #        TWINE_USERNAME: __token__
