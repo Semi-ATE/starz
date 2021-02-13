@@ -134,9 +134,13 @@ setup(
         'Development Status :: 4 - Beta',
         'Intended Audience :: Science/Research',
         'Intended Audience :: Developers',
-        'Topic :: Software Development :: Libraries',
-        'Topic :: Software Development :: Libraries :: Python Modules',
-        'Topic :: Scientific/Engineering',
+        'Topic :: Utilities',
+        'Topic :: System :: Installation/Setup',
+        'Topic :: Software Development :: Build Tools',
+        'Topic :: System :: Archiving',
+        'Topic :: System :: Archiving :: Compression',
+        'Topic :: System :: Archiving :: Packaging',
+        'Topic :: Utilities',
     ],
     license="MIT",
     keywords=[  # PEP-314 : https://www.python.org/dev/peps/pep-0314/
@@ -146,7 +150,7 @@ setup(
         'vivado',
         'petalinux',
     ],
-    platforms=['noarch'],
+    platforms=['Windows','Linux','MacOS'],
 #    zip_safe=True,  # TODO: maybe set to False, so that only wheel packages are made ?
 #    install_requires=[],  # TODO: How do I get requirements/run.txt in here ?!?
 #    setup_requires=[],  # usage discouraged in favor of PEP-518 : https://www.python.org/dev/peps/pep-0518/
