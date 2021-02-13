@@ -13,6 +13,7 @@ The Unix [split](https://www.man7.org/linux/man-pages/man1/split.1.html) command
 [![CD](https://github.com/Semi-ATE/starz/workflows/CD/badge.svg)](https://github.com/Semi-ATE/starz/actions?query=workflow%3ACD)
 [![codecov](https://codecov.io/gh/Semi-ATE/starz/branch/main/graph/badge.svg)](https://codecov.io/gh/Semi-ATE/starz)
 
+<a href="https://badge.fury.io/py/starz"><img src="https://badge.fury.io/py/starz.svg" alt="PyPI version" height="18"></a>
 [![PyPI version](https://badge.fury.io/py/starz.svg)](https://badge.fury.io/py/starz)
 [![GitHub release](https://img.shields.io/github/release/Semi-ATE/starz.svg)](https://GitHub.com/Semi-ATE/starz/releases/)
 
