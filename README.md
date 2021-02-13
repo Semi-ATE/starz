@@ -48,7 +48,7 @@ me@mybox:~$
 # Usage
 
 ```sh
-me@mybox$ stars --help
+me@mybox$ starz --help
 usage: starz [-h] -s SIZE [-c] [-q] [-v] SOURCE [DESTINATION]
 
 Pack a directory or re-pack a .tag(.gz) file in smaller .tar(.gz) chunks.
