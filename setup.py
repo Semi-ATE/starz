@@ -17,8 +17,17 @@ from setuptools import setup, find_packages
 from setuptools import Command
 class clean(Command):
     """Custom clean command to tidy up the project root."""
-    DIRS_TO_CLEAN = ["./build",  "./dist", "./*.pyc", "./starz/__pycache__", "./*.egg-info", "./.pytest_cache"]
-    FILES_TO_CLEAN = [".coverage"]
+    items_to_clean = [
+        './build',
+        './dist',
+        '*__pycache__',
+        "*.pytest_cache"
+        '*~',
+        '*.egg-info',
+        '*#*#',
+        '*#',
+        ".coverage",
+    ]
 
     user_options = []
 
@@ -29,24 +38,25 @@ class clean(Command):
         pass
 
     def run(self):
-        global here
+        home = os.getcwd()
+        for Root, Dirs, Files in os.walk(home):
+            for File in Files:
+                abs_path = os.path.join(Root, File)
+                rel_path = abs_path.replace(home, '.')
+                for item_to_clean in self.items_to_clean:
+                    if fnmatch.fnmatch(rel_path, item_to_clean):
+                        print(f"  deleting file '{rel_path}' ... ", end='')
+                        os.unlink(abs_path)
+                        print("Done.")
+            for Dir in Dirs:
+                abs_path = os.path.join(Root, Dir)
+                rel_path = abs_path.replace(home, '.')
+                for item_to_clean in self.items_to_clean:
+                    if fnmatch.fnmatch(rel_path, item_to_clean):
+                        print(f"  deleting directory '{rel_path}' ... ", end='')
+                        shutil.rmtree(abs_path)
+                        print("Done.")
 
-        for DIR_TO_CLEAN in self.DIRS_TO_CLEAN:
-            # Make paths absolute and relative to this path
-            abs_paths = glob.glob(os.path.normpath(os.path.join(here, DIR_TO_CLEAN)))
-            for path in [str(p) for p in abs_paths]:
-                if not path.startswith(here):
-                    # Die if path in CLEAN_FILES is absolute + outside this directory
-                    raise ValueError(f"{path} is not a path inside {here}")
-                print(f"removing directory '{os.path.relpath(path)}' ... ", end="")
-                shutil.rmtree(path)
-                print("Done.")
-        for FILE_TO_CLEAN in self.FILES_TO_CLEAN:
-            abs_path = os.path.normpath(os.path.join(here, FILE_TO_CLEAN))
-            if os.path.exists(abs_path):
-                print(f"removing file '{FILE_TO_CLEAN}' ... ", end="")
-                os.remove(abs_path)
-                print("Done.")
 
 from setuptools.command.develop import develop as develop_base
 class develop(develop_base):
