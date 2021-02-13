@@ -34,9 +34,8 @@ jobs:
       run:  twine check dist/*
     - name: Check manifest
       run: check-manifest
-    - run: ls -la dist/*
-#    - name: Upload to PyPI
-#      env:
-#        TWINE_USERNAME: __token__
-#        TWINE_PASSWORD: ${{ secrets.PYPI_TOKEN }}
-#      run: python -m twine upload dist/*
+    - name: Upload to PyPI
+      env:
+        TWINE_USERNAME: __token__
+        TWINE_PASSWORD: ${{ secrets.PYPI_TOKEN }}
+      run: python -m twine upload dist/*
