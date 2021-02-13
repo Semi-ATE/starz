@@ -27,7 +27,7 @@ jobs:
           python setup.py sdist
           twine check dist/*
       - name: Check manifest 
-      	if: contains(github.ref, "main")
+#      	if: contains(github.ref, "main")
       	run: |
           check-manifest
 
