@@ -11,8 +11,9 @@ import os
 import sys
 import tarfile
 import gzip
-from tqdm import tqdm
+
 import filetype
+from tqdm import tqdm
 
 from __init__ import __version__
 
@@ -206,7 +207,7 @@ def starz(args):
     args.size = size
 
     if args.version:
-        print(f"{__tool_name__} Version {__version__}")
+        print(f"starz Version {__version__}")
         sys.exit(0)
 
     if args.DESTINATION.startswith('~'):
