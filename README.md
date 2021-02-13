@@ -28,6 +28,21 @@ The Unix [split](https://www.man7.org/linux/man-pages/man1/split.1.html) command
 
 ```sh
 me@mybox$ pip install starz
+Collecting starz
+  Downloading starz-0.2.1.tar.gz (9.1 kB)
+Collecting tqdm
+  Downloading tqdm-4.56.2-py2.py3-none-any.whl (72 kB)
+     |████████████████████████████████| 72 kB 569 kB/s 
+Collecting filetype
+  Downloading filetype-1.0.7-py2.py3-none-any.whl (15 kB)
+Building wheels for collected packages: starz
+  Building wheel for starz (setup.py) ... done
+  Created wheel for starz: filename=starz-0.2.1-py3-none-any.whl size=6494 sha256=d4a5b530e722f344620734656a35edccb30cda4962d2b67ecc955c69a9f9c785
+  Stored in directory: /home/me/.cache/pip/wheels/2f/b2/9a/b3d2015e9fa8ac6acc46073e7e7b30dc9c52e87e523f83c02a
+Successfully built starz
+Installing collected packages: tqdm, filetype, starz
+Successfully installed filetype-1.0.7 starz-0.2.1 tqdm-4.56.2
+me@mybox:~$ 
 ```
 
 # Usage
