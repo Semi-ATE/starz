@@ -233,7 +233,8 @@ def starz(args):
         print(f"SOURCE '{args.SOURCE}' is not a directory, neither a .tar nor .tar.gz file.")
         sys.exit(5)
 
-if __name__ == "__main__":
+
+def main():
     parser = argparse.ArgumentParser(description='Pack a directory or re-pack a .tag(.gz) file in smaller .tar(.gz) chunks.')
 
     parser.add_argument('-s', '--size',
@@ -265,3 +266,6 @@ if __name__ == "__main__":
     
     args = parser.parse_args()
     starz(args)
+
+if __name__ == "__main__":
+    main()
