@@ -26,7 +26,7 @@ jobs:
         run: python setup.py sdist
       - name: Check package
         run: twine check dist/*
-      - name: Check manifest (only on push to main)
-        if: ${{ contains(github.ref, 'main') }}
+      - name: Check manifest
+#        if: ${{ contains(github.ref, 'main') }}
         run: check-manifest
 
