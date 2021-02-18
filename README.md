@@ -9,13 +9,14 @@ This poses a problem when one needs to install huge tarballs (eg: [PetaLinux](ht
 The Unix [split](https://www.man7.org/linux/man-pages/man1/split.1.html) command will **not** do as each resulting 'split' is not individual un-tar-able, and after a [cat](https://www.man7.org/linux/man-pages/man1/cat.1.html) of the individual parts, we violate the 5GB layer constraint again.
  
 [![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/Semi-ATE/starz/blob/main/LICENSE)
+![Conda](https://img.shields.io/conda/pn/conda-forge/starz)
+
 [![CI](https://github.com/Semi-ATE/starz/workflows/CI/badge.svg?branch=main)](https://github.com/Semi-ATE/starz/actions?query=workflow%3ACI)
 [![codecov](https://codecov.io/gh/Semi-ATE/starz/branch/main/graph/badge.svg)](https://codecov.io/gh/Semi-ATE/starz)
 [![CD](https://github.com/Semi-ATE/starz/workflows/CD/badge.svg)](https://github.com/Semi-ATE/starz/actions?query=workflow%3ACD)
 [![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/Semi-ATE/starz?color=blue&label=GitHub&sort=semver)](https://github.com/Semi-ATE/starz/releases/latest)
 [![PyPI](https://img.shields.io/pypi/v/starz?color=blue&label=PyPI)](https://pypi.org/project/starz/)
 [![Conda (channel only)](https://img.shields.io/conda/vn/conda-forge/starz?color=blue&label=conda-forge)](https://github.com/conda-forge/starz-feedstock)
-![Platform](https://anaconda.org/conda-forge/starz/badges/platforms.svg)
 
 # Installation
 
