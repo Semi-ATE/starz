@@ -11,9 +11,11 @@ The Unix [split](https://www.man7.org/linux/man-pages/man1/split.1.html) command
 [![GitHub](https://img.shields.io/github/license/Semi-ATE/starz?color=black)](https://github.com/Semi-ATE/starz/blob/main/LICENSE) 
 [![Conda](https://img.shields.io/conda/pn/conda-forge/starz?color=black)](https://anaconda.org/conda-forge/starz)
 ![Supported Python versions](https://img.shields.io/badge/python-%3E%3D3.7-black)
+
 [![CI](https://github.com/Semi-ATE/starz/workflows/CI/badge.svg?branch=main)](https://github.com/Semi-ATE/starz/actions?query=workflow%3ACI)
 [![codecov](https://codecov.io/gh/Semi-ATE/starz/branch/main/graph/badge.svg)](https://codecov.io/gh/Semi-ATE/starz)
 [![CD](https://github.com/Semi-ATE/starz/workflows/CD/badge.svg)](https://github.com/Semi-ATE/starz/actions?query=workflow%3ACD)
+
 [![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/Semi-ATE/starz?color=blue&label=GitHub&sort=semver)](https://github.com/Semi-ATE/starz/releases/latest)
 [![PyPI](https://img.shields.io/pypi/v/starz?color=blue&label=PyPI)](https://pypi.org/project/starz/)
 [![Conda (channel only)](https://img.shields.io/conda/vn/conda-forge/starz?color=blue&label=conda-forge)](https://github.com/conda-forge/starz-feedstock)
