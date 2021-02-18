@@ -9,7 +9,7 @@ This poses a problem when one needs to install huge tarballs (eg: [PetaLinux](ht
 The Unix [split](https://www.man7.org/linux/man-pages/man1/split.1.html) command will **not** do as each resulting 'split' is not individual un-tar-able, and after a [cat](https://www.man7.org/linux/man-pages/man1/cat.1.html) of the individual parts, we violate the 5GB layer constraint again.
  
 [![GitHub](https://img.shields.io/github/license/Semi-ATE/starz?color=black)](https://github.com/Semi-ATE/starz/blob/main/LICENSE) 
-![Conda](https://img.shields.io/conda/pn/conda-forge/starz)
+[![Conda](https://img.shields.io/conda/pn/conda-forge/starz)](https://anaconda.org/conda-forge/starz)
 [![CI](https://github.com/Semi-ATE/starz/workflows/CI/badge.svg?branch=main)](https://github.com/Semi-ATE/starz/actions?query=workflow%3ACI)
 [![codecov](https://codecov.io/gh/Semi-ATE/starz/branch/main/graph/badge.svg)](https://codecov.io/gh/Semi-ATE/starz)
 [![CD](https://github.com/Semi-ATE/starz/workflows/CD/badge.svg)](https://github.com/Semi-ATE/starz/actions?query=workflow%3ACD)
