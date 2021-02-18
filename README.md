@@ -10,7 +10,7 @@ The Unix [split](https://www.man7.org/linux/man-pages/man1/split.1.html) command
  
 [![GitHub](https://img.shields.io/github/license/Semi-ATE/starz?color=black)](https://github.com/Semi-ATE/starz/blob/main/LICENSE) 
 [![Conda](https://img.shields.io/conda/pn/conda-forge/starz)](https://anaconda.org/conda-forge/starz)
-![Supported Python versions](https://img.shields.io/badge/python-%3E%3D3.7-red)
+![Supported Python versions](https://img.shields.io/badge/python-%3E%3D3.7-black)
 [![CI](https://github.com/Semi-ATE/starz/workflows/CI/badge.svg?branch=main)](https://github.com/Semi-ATE/starz/actions?query=workflow%3ACI)
 [![codecov](https://codecov.io/gh/Semi-ATE/starz/branch/main/graph/badge.svg)](https://codecov.io/gh/Semi-ATE/starz)
 [![CD](https://github.com/Semi-ATE/starz/workflows/CD/badge.svg)](https://github.com/Semi-ATE/starz/actions?query=workflow%3ACD)
