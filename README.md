@@ -10,7 +10,6 @@ The Unix [split](https://www.man7.org/linux/man-pages/man1/split.1.html) command
  
 [![MIT License](https://img.shields.io/apm/l/atomic-design-ui.svg?)](https://github.com/Semi-ATE/starz/blob/main/LICENSE)
 ![Conda](https://img.shields.io/conda/pn/conda-forge/starz)
-
 [![CI](https://github.com/Semi-ATE/starz/workflows/CI/badge.svg?branch=main)](https://github.com/Semi-ATE/starz/actions?query=workflow%3ACI)
 [![codecov](https://codecov.io/gh/Semi-ATE/starz/branch/main/graph/badge.svg)](https://codecov.io/gh/Semi-ATE/starz)
 [![CD](https://github.com/Semi-ATE/starz/workflows/CD/badge.svg)](https://github.com/Semi-ATE/starz/actions?query=workflow%3ACD)
