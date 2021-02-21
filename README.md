@@ -24,6 +24,7 @@ The Unix [split](https://www.man7.org/linux/man-pages/man1/split.1.html) command
 
 [![GitHub issues](https://img.shields.io/github/issues/Semi-ATE/starz)](https://github.com/Semi-ATE/starz/issues)
 [![GitHub pull requests](https://img.shields.io/github/issues-pr/Semi-ATE/starz)](https://github.com/Semi-ATE/starz/pulls)
+[![GitHub commits since latest release (by date)](https://img.shields.io/github/commits-since/Semi-ATE/starz/latest)](https://github.com/Semi-ATE/starz)
 
 # Installation
 
