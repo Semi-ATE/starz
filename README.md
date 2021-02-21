@@ -23,6 +23,8 @@ The Unix [split](https://www.man7.org/linux/man-pages/man1/split.1.html) command
 
 
 [![GitHub issues](https://img.shields.io/github/issues/Semi-ATE/starz)](https://github.com/Semi-ATE/starz/issues)
+[![GitHub pull requests](https://img.shields.io/github/issues-pr/Semi-ATE/starz)](https://github.com/Semi-ATE/starz/pulls)
+
 # Installation
 
 ## conda
