@@ -20,11 +20,10 @@ The Unix [split](https://www.man7.org/linux/man-pages/man1/split.1.html) command
 [![GitHub release (latest SemVer)](https://img.shields.io/github/v/release/Semi-ATE/starz?color=blue&label=GitHub&sort=semver)](https://github.com/Semi-ATE/starz/releases/latest)
 [![PyPI](https://img.shields.io/pypi/v/starz?color=blue&label=PyPI)](https://pypi.org/project/starz/)
 [![Conda (channel only)](https://img.shields.io/conda/vn/conda-forge/starz?color=blue&label=conda-forge)](https://github.com/conda-forge/starz-feedstock)
-
+[![GitHub commits since latest release (by date)](https://img.shields.io/github/commits-since/Semi-ATE/starz/latest)](https://github.com/Semi-ATE/starz)
 
 [![GitHub issues](https://img.shields.io/github/issues/Semi-ATE/starz)](https://github.com/Semi-ATE/starz/issues)
 [![GitHub pull requests](https://img.shields.io/github/issues-pr/Semi-ATE/starz)](https://github.com/Semi-ATE/starz/pulls)
-[![GitHub commits since latest release (by date)](https://img.shields.io/github/commits-since/Semi-ATE/starz/latest)](https://github.com/Semi-ATE/starz)
 
 # Installation
 
