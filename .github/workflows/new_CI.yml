@@ -47,7 +47,7 @@ jobs:
         if: strategy.job-index != 0
         uses: actions/download-artifact@v2
         with: 
-          name: .coverage
+          name: code-cov
           path: ./
       - run: ls -la
       - name: Run tests and append to previous coverage
@@ -55,5 +55,5 @@ jobs:
       - name: Upload coverage for next job
         uses: actions/upload-artifact@v2
         with:
-          name: .coverage
-          path: ./
+          name: code-cov
+          path: .coverage
