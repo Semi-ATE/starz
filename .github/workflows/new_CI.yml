@@ -41,16 +41,16 @@ jobs:
         run: |
           pip install -r requirements/run.txt
           pip install -r requirements/test.txt       
-      - name: Download coverage of previous steps
+      - name: Download coverage of previous job
         if: strategy.job-index != 0
-        uses: actions/download-artifact@v2.0.8
+        uses: actions/download-artifact@v2
         with: 
-          name: .coverage
-          path: ./
+          name: coverage
+          path: .coverage
       - name: Run tests and append to previous coverage
         run: pytest tests/ --cov=starz --cov-append
-      - name: Upload coverage for next steps
-        uses: actions/upload-artifact@v2.2.2
+      - name: Upload coverage for next job
+        uses: actions/upload-artifact@v2
         with:
-          name: .coverage
-          path: ./
+          name: coverage
+          path: .coverage
