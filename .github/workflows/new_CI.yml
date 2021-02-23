@@ -3,36 +3,6 @@ name: CI
 on: push
 
 jobs:
-  test_code:
-    strategy:
-      max-parallel: 1
-      matrix:
-        os: [macos-latest, ubuntu-latest, windows-latest]
-        python: ['3.7', '3.8', '3.9']            
-    runs-on: ${{ matrix.os }}
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-      - name: Setup python
-        uses: actions/setup-python@v2
-        with:
-          python-version: ${{matrix.python}}        
-      - name: Setup dependencies
-        run: |
-          pip install -r requirements/run.txt
-          pip install -r requirements/test.txt       
-      - name: Download coverage of previous steps
-        if: strategy.job-index != 0
-        uses: actions/download-artifact@v2.0.8
-        with: 
-          name: .coverage
-      - name: Run tests and append to previous coverage
-        run: pytest tests/ --cov=starz --cov-append
-      - name: Upload coverage for next steps
-        uses: actions/upload-artifact@v2.2.2
-        with:
-          path: ./
-          name: report.txt
   test_package:
     runs-on: ubuntu-latest
     steps:
@@ -52,3 +22,35 @@ jobs:
         run: twine check dist/*
       - name: Check manifest 
         run: check-manifest
+  test_code:
+    strategy:
+      max-parallel: 1
+      matrix:
+        os: [macos-latest, ubuntu-latest, windows-latest]
+        python: ['3.7', '3.8', '3.9']            
+    runs-on: ${{ matrix.os }}
+    needs: test_package
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Setup python
+        uses: actions/setup-python@v2
+        with:
+          python-version: ${{matrix.python}}        
+      - name: Setup dependencies
+        run: |
+          pip install -r requirements/run.txt
+          pip install -r requirements/test.txt       
+      - name: Download coverage of previous steps
+        if: strategy.job-index != 0
+        uses: actions/download-artifact@v2.0.8
+        with: 
+          name: .coverage
+          path: ./
+      - name: Run tests and append to previous coverage
+        run: pytest tests/ --cov=starz --cov-append
+      - name: Upload coverage for next steps
+        uses: actions/upload-artifact@v2.2.2
+        with:
+          name: .coverage
+          path: ./
