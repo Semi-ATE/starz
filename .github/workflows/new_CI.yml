@@ -47,13 +47,13 @@ jobs:
         if: strategy.job-index != 0
         uses: actions/download-artifact@v2
         with: 
-          name: coverage
-          path: .coverage
+          name: .coverage
+          path: ./
       - run: ls -la
       - name: Run tests and append to previous coverage
         run: pytest tests/ --cov=starz --cov-append
       - name: Upload coverage for next job
         uses: actions/upload-artifact@v2
         with:
-          name: coverage
-          path: .coverage
+          name: .coverage
+          path: ./
