@@ -86,7 +86,7 @@ brol.02.tar:  43%|███████████             | 6751263/157286
 me@mybox$ 
 ```
 
-re-packing a bin gzipped-tar file in smaller gzipped-tar files :
+re-packing a big gzipped-tar file in smaller gzipped-tar files :
 
 ```sh
 me@mybox$ starz -c -s 15MB brol.tar.gz
