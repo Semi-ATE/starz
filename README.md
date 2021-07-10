@@ -15,6 +15,9 @@
 [![PyPI](https://img.shields.io/pypi/v/starz?color=blue&label=PyPI)](https://pypi.org/project/starz/)
 [![Conda (channel only)](https://img.shields.io/conda/vn/conda-forge/starz?color=blue&label=conda-forge)](https://anaconda.org/conda-forge/starz)
 
+![PyPI - Downloads](https://img.shields.io/pypi/dm/starz?color=g&label=PyPI%20downloads)
+![Conda](https://img.shields.io/conda/dn/conda-forge/starz?color=g&label=conda-forge%20downloads)
+
 [![GitHub issues](https://img.shields.io/github/issues/Semi-ATE/starz)](https://github.com/Semi-ATE/starz/issues)
 [![GitHub pull requests](https://img.shields.io/github/issues-pr/Semi-ATE/starz)](https://github.com/Semi-ATE/starz/pulls)
 
