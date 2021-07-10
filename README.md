@@ -59,7 +59,7 @@ me@mybox:~$
 
 # Usage
 
-```sh
+```bash
 me@mybox$ starz --help
 usage: starz [-h] -s SIZE [-c] [-q] [-v] SOURCE [DESTINATION]
 
@@ -81,7 +81,7 @@ me@mybox$
 
 re-packing a big gzipped-tar file in smaller non-compressed tar files :
 
-```sh
+```bash
 me@mybox$ starz -s 15MB brol.tar.gz
 brol.00.tar:  18%|█████                   | 2808448/15728640 [00:00<00:00, 30900007.82 Bytes/s]
 brol.01.tar:  99%|███████████████████████▊| 15633123/15728640 [00:00<00:00, 223312287.21 Bytes/s]
@@ -91,7 +91,7 @@ me@mybox$
 
 re-packing a big gzipped-tar file in smaller gzipped-tar files :
 
-```sh
+```bash
 me@mybox$ starz -c -s 15MB brol.tar.gz
 brol.00.tar.gz:  18%|█████                   | 2808448/15728640 [00:00<00:00, 30900007.82 Bytes/s]
 brol.01.tar.gz:  99%|███████████████████████▊| 15633123/15728640 [00:00<00:00, 223312287.21 Bytes/s]
@@ -101,14 +101,14 @@ me@mybox$
 
 same as above, but not outputting progress bar :
 
-```sh
+```bash
 me@mybox$ starz -q -c -s 15MB brol.tar.gz
 me@mybox$ 
 ```
 
 packing the `./brol` directory (recursively) in compressed-tar files with less than 15MB of content each:
 
-```sh
+```bash
 me@mybox$ starz -c -s 15MB ./brol
 brol.00.tar.gz:  18%|█████                   | 2808448/15728640 [00:00<00:00, 30900007.82 Bytes/s]
 brol.01.tar.gz:  99%|███████████████████████▊| 15633123/15728640 [00:00<00:00, 223312287.21 Bytes/s]
