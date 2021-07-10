@@ -1,13 +1,6 @@
 # starz
 **S**ized **T**ape **AR**chive**Z**
 
-This small command line tool creates sized (gzipped) tar files from either a (gzipped) tar or a directory.
-
-The 'raison d'être' of this tool is because [GitHub Packages](https://github.com/features/packages) limits the layer size of a docker container to 5GB.
-This poses a problem when one needs to install huge tarballs (eg: [PetaLinux](https://www.xilinx.com/support/download/index.html/content/xilinx/en/downloadNav/embedded-design-tools.html), [vivado](https://www.xilinx.com/support/download.html), ...)
-
-The Unix [split](https://www.man7.org/linux/man-pages/man1/split.1.html) command will **not** do as each resulting 'split' is not individual un-tar-able, and after a [cat](https://www.man7.org/linux/man-pages/man1/cat.1.html) of the individual parts, we violate the 5GB layer constraint again.
- 
 [![GitHub](https://img.shields.io/github/license/Semi-ATE/starz?color=black)](https://github.com/Semi-ATE/starz/blob/main/LICENSE) 
 ![Conda](https://img.shields.io/conda/pn/conda-forge/starz?color=black)
 ![Supported Python versions](https://img.shields.io/badge/python-%3E%3D3.7-black)
@@ -25,6 +18,13 @@ The Unix [split](https://www.man7.org/linux/man-pages/man1/split.1.html) command
 [![GitHub issues](https://img.shields.io/github/issues/Semi-ATE/starz)](https://github.com/Semi-ATE/starz/issues)
 [![GitHub pull requests](https://img.shields.io/github/issues-pr/Semi-ATE/starz)](https://github.com/Semi-ATE/starz/pulls)
 
+This small command line tool creates sized (gzipped) tar files from either a (gzipped) tar or a directory.
+
+The 'raison d'être' of this tool is because [GitHub Packages](https://github.com/features/packages) limits the layer size of a docker container to 5GB.
+This poses a problem when one needs to install huge tarballs (eg: [PetaLinux](https://www.xilinx.com/support/download/index.html/content/xilinx/en/downloadNav/embedded-design-tools.html), [vivado](https://www.xilinx.com/support/download.html), ...)
+
+The Unix [split](https://www.man7.org/linux/man-pages/man1/split.1.html) command will **not** do as each resulting 'split' is not individual un-tar-able, and after a [cat](https://www.man7.org/linux/man-pages/man1/cat.1.html) of the individual parts, we violate the 5GB layer constraint again.
+ 
 # Installation
 
 ## conda
